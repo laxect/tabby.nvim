@@ -20,5 +20,5 @@
       (simple-service
         'neovim
         home-files-service-type
-        (list (list ".config/nvim/init.lua" (plain-file "init.lua" "require(\"tabby\").setup({})"))
+        (list (list ".config/nvim/init.lua" (plain-file "init.lua" "require(\"tabby\").setup()"))
               (list ".local/share/nvim/site/pack/d/start/tabby" (local-file "../tabby.nvim" #:recursive? #t)))))))
